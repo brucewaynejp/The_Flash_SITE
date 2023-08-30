@@ -1,0 +1,198 @@
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
+:root {
+
+    --primeira-cor: #310808; 
+    --segunda-cor: #E4DB03;
+    --tericeira-cor: #DD0606;
+
+}
+
+
+body {
+    height: 100vh;
+    
+    background-color: var(--primeira-cor);
+
+    display: flex;
+    flex-direction: column;
+    font-family: 'Righteous', cursive;
+
+}
+
+
+.container {
+
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+
+    /*Margem de meu site*/
+    width: 90vw;
+    margin: auto;
+
+    
+}
+
+
+header {
+    
+    margin-top: 50px;
+}
+
+
+.home_power_liga {
+
+    grid-column: 8/11;
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    
+} 
+
+
+
+.home_power_liga a {
+
+    text-decoration: none;
+    color: var(--segunda-cor);
+    font-size: 20px;
+
+}
+
+.logo_flash {
+
+    grid-column: 1/-1;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+}
+
+.logo_flash a{
+
+    text-decoration: none;
+    color: var(--segunda-cor);
+    font-size: 20px;
+}
+
+
+
+
+
+
+
+main {
+   
+    flex-grow: 1;
+    
+}
+
+
+.titulo_flash {
+    position: relative; /*personagem flash*/
+
+    grid-column: 1/-1;
+    place-self: center;  /*Centralizou na tela*/
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.titulo_text {
+
+    color: var(--tericeira-cor);
+    font-size: 12vw;
+
+
+}
+
+.titulo_transparente {
+
+   font-size: 12vw;
+   color: var(--segunda-cor);
+   position: absolute; /*Par se soltar de camada e assim ficar um atras do outro junto com z-index*/
+   top: -10%; /*Movimentar o the para baixo*/
+
+   z-index: -1;
+
+} 
+
+
+
+
+.texto_flash_des {
+
+    grid-column: 1/7;
+    place-self: center start; /*Centralizo meu conteudo, no caso hs e o p* */
+    
+
+}
+
+.texto_flash_des h2 {
+    color: var(--segunda-cor);
+    font-size: 2rem;
+  
+}
+
+.texto_flash_des p {
+    color: var(--tericeira-cor);
+    font-size: 1rem;
+    
+    
+}
+
+
+.imgem_flash_png {
+
+    grid-column: -7/-1;
+    place-self: center end ; /*Centralizo meu conteudo, no caso hs e o p* */
+    
+    
+}
+
+.imgem_flash_png h2 {
+    color: var(--segunda-cor);
+    font-size: 2rem;
+    
+ 
+}
+
+.imgem_flash_png img {
+    width: 300px;
+
+
+}
+
+
+
+.imagem_flash {
+
+    position: absolute; /*Soltando o pikachu do body, mas no caso coloque um relative aonde eu quero horientar meu desenho, no caso, no title*/
+    top: 40%;
+    left: 30%;   
+}
+
+.imagem_flash img {
+    width: 300px;
+
+}
+
+
+
+footer {
+    
+    margin-bottom: 24px;
+
+}
